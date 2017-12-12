@@ -1,0 +1,29 @@
+Dec 12 05:49:28 s-gowork-app-01 systemd[1]: Created slice User Slice of ubuntu.
+Dec 12 05:49:28 s-gowork-app-01 systemd[1]: Starting User Manager for UID 1000...
+Dec 12 05:49:28 s-gowork-app-01 systemd[1]: Started Session 3393 of user ubuntu.
+Dec 12 05:49:28 s-gowork-app-01 systemd[22661]: Reached target Paths.
+Dec 12 05:49:28 s-gowork-app-01 systemd[22661]: Reached target Timers.
+Dec 12 05:49:28 s-gowork-app-01 systemd[22661]: Reached target Sockets.
+Dec 12 05:49:28 s-gowork-app-01 systemd[22661]: Reached target Basic System.
+Dec 12 05:49:28 s-gowork-app-01 systemd[22661]: Reached target Default.
+Dec 12 05:49:28 s-gowork-app-01 systemd[22661]: Startup finished in 10ms.
+Dec 12 05:49:28 s-gowork-app-01 systemd[1]: Started User Manager for UID 1000.
+Dec 12 05:49:33 s-gowork-app-01 gowork_bin.sh[6537]: I, [2017-12-12T12:49:33.364000 #6539]  INFO -- : Started GET "/ping" for 10.18.0.230 at 2017-12-12 12:49:33 +0700
+Dec 12 05:49:33 s-gowork-app-01 gowork_bin.sh[6537]: I, [2017-12-12T12:49:33.366000 #6539]  INFO -- : Processing by HealthCheckController#ping as HTML
+Dec 12 05:49:33 s-gowork-app-01 gowork_bin.sh[6537]: I, [2017-12-12T12:49:33.366000 #6539]  INFO -- :   Rendered text template (0.0ms)
+Dec 12 05:49:33 s-gowork-app-01 gowork_bin.sh[6537]: I, [2017-12-12T12:49:33.367000 #6539]  INFO -- : Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+Dec 12 05:49:38 s-gowork-app-01 gowork_bin.sh[6537]: I, [2017-12-12T12:49:38.371000 #6539]  INFO -- : Started GET "/ping" for 10.18.0.230 at 2017-12-12 12:49:38 +0700
+Dec 12 05:49:38 s-gowork-app-01 gowork_bin.sh[6537]: I, [2017-12-12T12:49:38.372000 #6539]  INFO -- : Processing by HealthCheckController#ping as HTML
+Dec 12 05:49:28 s-gowork-app-01 systemd[22661]: Reached target Paths.
+Dec 12 05:49:28 s-gowork-app-01 systemd[22661]: Reached target Timers.
+Dec 12 05:49:28 s-gowork-app-01 systemd[22661]: Reached target Sockets.
+Dec 12 05:49:28 s-gowork-app-01 systemd[22661]: Reached target Basic System.
+Dec 12 05:49:28 s-gowork-app-01 systemd[22661]: Reached target Default.
+Dec 12 05:49:28 s-gowork-app-01 systemd[22661]: Startup finished in 10ms.
+Dec 12 05:49:28 s-gowork-app-01 systemd[1]: Started User Manager for UID 1000.
+Dec 12 05:49:33 s-gowork-app-01 gowork_bin.sh[6537]: I, [2017-12-12T12:49:33.364000 #6539]  INFO -- : Started GET "/ping" for 10.18.0.230 at 2017-12-12 12:49:33 +0700
+Dec 12 05:49:33 s-gowork-app-01 gowork_bin.sh[6537]: I, [2017-12-12T12:49:33.366000 #6539]  INFO -- : Processing by HealthCheckController#ping as HTML
+Dec 12 05:49:33 s-gowork-app-01 gowork_bin.sh[6537]: I, [2017-12-12T12:49:33.366000 #6539]  INFO -- :   Rendered text template (0.0ms)
+Dec 12 05:49:33 s-gowork-app-01 gowork_bin.sh[6537]: I, [2017-12-12T12:49:33.367000 #6539]  INFO -- : Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+Dec 12 05:49:38 s-gowork-app-01 gowork_bin.sh[6537]: I, [2017-12-12T12:49:38.371000 #6539]  INFO -- : Started GET "/ping" for 10.18.0.230 at 2017-12-12 12:49:38 +0700
+Dec 12 05:49:38 s-gowork-app-01 gowork_bin.sh[6537]: I, [2017-12-12T12:49:38.372000 #6539]  INFO -- : Processing by HealthCheckController#ping as HTML
