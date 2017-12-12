@@ -48,7 +48,8 @@ services:
     volumes:
       - ./filebeat/config/filebeat.yml:/usr/share/filebeat/filebeat.yml:ro
       - ./filebeat/config/filebeat-es-template.json:/usr/share/filebeat/filebeat-es-template.json:ro
-      - ./filebeat/logs/plaintext.log:/var/log/fb_plaintext.log      
+      - ./filebeat/logs/plaintext.log:/var/log/fb_plaintext.log
+      - ./filebeat/logs/jsonlog.log:/var/log/fb_json_jsonlog.log
     networks:
       - elk
 

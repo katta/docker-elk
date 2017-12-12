@@ -1,6 +1,6 @@
 filebeat.prospectors:
 - type: log
-  enabled: true
+  enabled: false
   paths:
     - /var/log/fb_*.log
   use_type: true
@@ -8,20 +8,36 @@ filebeat.prospectors:
   multiline.pattern: '^[[:space:]]+|^Caused by:'
   multiline.negate: false
   multiline.match: after
+  fields_under_root: true
+  fields:
+    app_name: 'gobills'
+
+- type: log
+  enabled: true
+  paths:
+    - /var/log/fb_json*.log
+  use_type: true
+  document_type: app-logs-json-type
+  multiline.pattern: '^[[:space:]]+|^Caused by:'
+  multiline.negate: false
+  multiline.match: after
+  json.keys_under_root: false
+  json.add_error_key: false
+  json.message_key: msg
 
 output.elasticsearch:
   hosts: ["elasticsearch:9200"]
-  index: app-logs
-  template.enabled: true
-  template.path: /usr/share/filebeat/filebeat-es-template.json
-  template.overwrite: false
-
-processors:
-- drop_event:
-    when:
-      not:
-        contains:
-          message: "gowork_bin.sh"
+  index: app-logs-%{+YYYY.dd.HH.mm}
+  # template.enabled: true
+  # template.path: /usr/share/filebeat/filebeat-es-template.json
+  # template.overwrite: false
+#
+# processors:
+# - drop_event:
+#     when:
+#       not:
+#         contains:
+#           message: "gowork_bin.sh"
 
 setup.template.name: app-logs
 setup.template.pattern: "app-logs-*"
